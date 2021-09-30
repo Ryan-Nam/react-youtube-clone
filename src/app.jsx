@@ -1,8 +1,9 @@
 import React, {useEffect, useState } from 'react';
 import './app.css';
+import VideoList from './components/video_list/video_list';
 
 function App() {
-  const [video, setVideos] = useState([]);
+  const [videos, setVideos] = useState([]);
   
   useEffect(()=> {
     // Fetch from Youtube API - i use postman
@@ -22,9 +23,7 @@ function App() {
   // - [video, name]: ]whenever these are updated, callback () will be called.
 
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <VideoList videos={videos}></VideoList>
   );
 }
 
