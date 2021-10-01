@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Video_item = (props) => (
-    <h1>{props.video.snippet.title}</h1>
-    );
+const Video_item = (props) => 
+<li>
+    <img src={props.video.snippet.thumbnails.medium.url} art="video thumbail"></img>
+
+</li>;
 
 export default Video_item;
