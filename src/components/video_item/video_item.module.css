@@ -1,0 +1,42 @@
+.constainer {
+  width: 50%; /*실제50%인데 보더도 포함되서 2줄이 안나와, 그래서 box-sizing border로 지정*/
+  /* box-sizing: border-box;  이거 그냥 index.css에다 지정했음*/
+
+  padding: 0.2em;
+}
+
+.video {
+  /* 한줄에 다 나오게하기 */
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  /* Search Box shadow Generator  */
+  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+  cursor: pointer;
+  transition: transform 250ms ease-in;
+}
+
+.video:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 40%;
+  height: 100%;
+}
+
+.metadata {
+  margin-left: 0.2em;
+}
+
+/* title/meta 간격이 너무 떨어져있음 -> Reason: Defaul Margin */
+.title,
+.channel {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.channel {
+  font-size: 0.9rem;
+  font-size: 0.6rem;
+}
