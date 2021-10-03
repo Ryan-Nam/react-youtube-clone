@@ -1,5 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import './app.css';
+import Search_header from './components/search_header/search_header';
 import VideoList from './components/video_list/video_list';
 
 function App() {
@@ -23,7 +24,10 @@ function App() {
   // - [video, name]: ]whenever these are updated, callback () will be called.
 
   return (
+    <>
+    <Search_header></Search_header>
     <VideoList videos={videos}></VideoList>
+    </>
   );
 }
 
